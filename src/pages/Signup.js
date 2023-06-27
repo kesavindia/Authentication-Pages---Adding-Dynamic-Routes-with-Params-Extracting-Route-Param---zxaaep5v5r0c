@@ -10,7 +10,7 @@ export const Signup = () =>{
         e.preventDefault();
         const email = emailref.current.value;
         const password = passref.current.value;
-        signup({email,password}).then(()=>navigate('signin'))
+        signup({email,password}).then(()=>navigate('/signin'))
     }
     return(
         <div id="signin-page">
@@ -22,7 +22,6 @@ export const Signup = () =>{
                 <br/>
                 <button type='submit'>Signup</button>
             </form>
-
         </div>
     )
 }

@@ -13,7 +13,7 @@ export const Signin = ()=>{
         const password = passref.current.value
         signin({email,password}).then(()=>{localStorage.setItem('isLoggedIn', true)
         navigate('/home')
-    }).catch(()=>setErr("wrong email or password"))
+    }).catch(()=>setErr("Wrong email or password"))
     }
     return(
         <div id="signin-page">
