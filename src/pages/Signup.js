@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import signup from   '../api/auth';
+import {signup} from   '../api/auth';
 import { useNavigate } from 'react-router';
 
 export const Signup = () =>{
@@ -22,6 +22,7 @@ export const Signup = () =>{
                 <br/>
                 <button type='submit'>Signup</button>
             </form>
+
         </div>
     )
 }
